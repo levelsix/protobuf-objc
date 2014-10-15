@@ -3,4 +3,9 @@ before_install:
 - brew update
 - brew unlink xctool
 - brew install xctool
+- brew install automake
+- brew install libtool
+- brew install protobuf
+- ./build.sh
+- ./travis/travis.sh
 script: xctool -project ./src/runtime/ProtocolBuffers.xcodeproj -sdk iphonesimulator -scheme ProtocolBuffers build test
