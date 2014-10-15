@@ -1,5 +1,7 @@
+
 Protocol Buffers for Objective-C
 =================
+[![Build Status](https://travis-ci.org/alexeyxo/protobuf-objc.svg?branch=master)](https://travis-ci.org/alexeyxo/protobuf-objc)
 
 An implementation of Protocol Buffers in Objective C.
 
