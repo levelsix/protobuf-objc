@@ -52,8 +52,11 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 
 
   void EnumGenerator::GenerateHeader(io::Printer* printer) {
+
+
     printer->Print(
-      "typedef enum {\n");
+      "typedef NS_ENUM(NSInteger, $classname$) {\n",
+      "classname", ClassName(descriptor_));
     printer->Indent();
     
     for (int i = 0; i < canonical_values_.size(); i++) {
@@ -65,7 +68,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 
     printer->Outdent();
     printer->Print(
-      "} $classname$;\n"
+      "};\n"
       "\n"
       "BOOL $classname$IsValidValue($classname$ value);\n"
       "\n",
