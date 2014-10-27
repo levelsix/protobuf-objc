@@ -55,7 +55,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
 
 
     printer->Print(
-      "typedef NS_ENUM(NSInteger, $classname$) {\n",
+      "typedef NS_ENUM(SInt32, $classname$) {\n",
       "classname", ClassName(descriptor_));
     printer->Indent();
     

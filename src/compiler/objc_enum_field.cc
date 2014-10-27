@@ -203,7 +203,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
   void EnumFieldGenerator::GenerateDescriptionCodeSource(io::Printer* printer) const {
     printer->Print(variables_,
       "if (self.has$capitalized_name$) {\n"
-      "  [output appendFormat:@\"%@%@: %d\\n\", indent, @\"$name$\", self.$name$];\n"
+      "  [output appendFormat:@\"%@%@: %@\\n\", indent, @\"$name$\", [NSNumber numberWithInteger:self.$name$]];\n"
       "}\n");
   }
 

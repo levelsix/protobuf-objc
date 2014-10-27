@@ -61,19 +61,19 @@
   #endif
 #endif
 
-typedef enum {
+typedef NS_ENUM(SInt32, ForeignEnumLite) {
   ForeignEnumLiteForeignLiteFoo = 4,
   ForeignEnumLiteForeignLiteBar = 5,
   ForeignEnumLiteForeignLiteBaz = 6,
-} ForeignEnumLite;
+};
 
 BOOL ForeignEnumLiteIsValidValue(ForeignEnumLite value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, TestAllTypesLiteNestedEnum) {
   TestAllTypesLiteNestedEnumFoo = 1,
   TestAllTypesLiteNestedEnumBar = 2,
   TestAllTypesLiteNestedEnumBaz = 3,
-} TestAllTypesLiteNestedEnum;
+};
 
 BOOL TestAllTypesLiteNestedEnumIsValidValue(TestAllTypesLiteNestedEnum value);
 

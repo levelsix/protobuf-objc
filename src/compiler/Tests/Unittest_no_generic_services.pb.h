@@ -18,9 +18,9 @@
   #endif
 #endif
 
-typedef enum {
+typedef NS_ENUM(SInt32, TestEnum) {
   TestEnumFoo = 1,
-} TestEnum;
+};
 
 BOOL TestEnumIsValidValue(TestEnum value);
 

@@ -161,23 +161,23 @@
   #endif
 #endif
 
-typedef enum {
+typedef NS_ENUM(SInt32, ForeignEnum) {
   ForeignEnumForeignFoo = 4,
   ForeignEnumForeignBar = 5,
   ForeignEnumForeignBaz = 6,
-} ForeignEnum;
+};
 
 BOOL ForeignEnumIsValidValue(ForeignEnum value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, TestEnumWithDupValue) {
   TestEnumWithDupValueFoo1 = 1,
   TestEnumWithDupValueBar1 = 2,
   TestEnumWithDupValueBaz = 3,
-} TestEnumWithDupValue;
+};
 
 BOOL TestEnumWithDupValueIsValidValue(TestEnumWithDupValue value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, TestSparseEnum) {
   TestSparseEnumSparseA = 123,
   TestSparseEnumSparseB = 62374,
   TestSparseEnumSparseC = 12589234,
@@ -185,32 +185,32 @@ typedef enum {
   TestSparseEnumSparseE = -53452,
   TestSparseEnumSparseF = 0,
   TestSparseEnumSparseG = 2,
-} TestSparseEnum;
+};
 
 BOOL TestSparseEnumIsValidValue(TestSparseEnum value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, TestAllTypesNestedEnum) {
   TestAllTypesNestedEnumFoo = 1,
   TestAllTypesNestedEnumBar = 2,
   TestAllTypesNestedEnumBaz = 3,
   TestAllTypesNestedEnumNeg = -1,
-} TestAllTypesNestedEnum;
+};
 
 BOOL TestAllTypesNestedEnumIsValidValue(TestAllTypesNestedEnum value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, TestOneof2NestedEnum) {
   TestOneof2NestedEnumFoo = 1,
   TestOneof2NestedEnumBar = 2,
   TestOneof2NestedEnumBaz = 3,
-} TestOneof2NestedEnum;
+};
 
 BOOL TestOneof2NestedEnumIsValidValue(TestOneof2NestedEnum value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, TestDynamicExtensionsDynamicEnumType) {
   TestDynamicExtensionsDynamicEnumTypeDynamicFoo = 2200,
   TestDynamicExtensionsDynamicEnumTypeDynamicBar = 2201,
   TestDynamicExtensionsDynamicEnumTypeDynamicBaz = 2202,
-} TestDynamicExtensionsDynamicEnumType;
+};
 
 BOOL TestDynamicExtensionsDynamicEnumTypeIsValidValue(TestDynamicExtensionsDynamicEnumType value);
 

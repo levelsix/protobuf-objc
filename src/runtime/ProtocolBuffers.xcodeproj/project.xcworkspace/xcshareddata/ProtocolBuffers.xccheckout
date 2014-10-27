@@ -14,7 +14,7 @@
 		<string>https://github.com/alexeyxo/protobuf-objc.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>src/runtime/ProtocolBuffers.xcodeproj/project.xcworkspace</string>
+	<string>src/runtime/ProtocolBuffers.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0188F2A2CDE1E23FB54BA7DEC720DB0076A94A2D</key>
