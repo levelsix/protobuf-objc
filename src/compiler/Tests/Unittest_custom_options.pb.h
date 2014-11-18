@@ -109,36 +109,36 @@
   #endif
 #endif
 
-typedef enum {
+typedef NS_ENUM(SInt32, MethodOpt1) {
   MethodOpt1Methodopt1Val1 = 1,
   MethodOpt1Methodopt1Val2 = 2,
-} MethodOpt1;
+};
 
 BOOL MethodOpt1IsValidValue(MethodOpt1 value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, AggregateEnum) {
   AggregateEnumValue = 1,
-} AggregateEnum;
+};
 
 BOOL AggregateEnumIsValidValue(AggregateEnum value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, TestMessageWithCustomOptionsAnEnum) {
   TestMessageWithCustomOptionsAnEnumAnenumVal1 = 1,
   TestMessageWithCustomOptionsAnEnumAnenumVal2 = 2,
-} TestMessageWithCustomOptionsAnEnum;
+};
 
 BOOL TestMessageWithCustomOptionsAnEnumIsValidValue(TestMessageWithCustomOptionsAnEnum value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, DummyMessageContainingEnumTestEnumType) {
   DummyMessageContainingEnumTestEnumTypeTestOptionEnumType1 = 22,
   DummyMessageContainingEnumTestEnumTypeTestOptionEnumType2 = -23,
-} DummyMessageContainingEnumTestEnumType;
+};
 
 BOOL DummyMessageContainingEnumTestEnumTypeIsValidValue(DummyMessageContainingEnumTestEnumType value);
 
-typedef enum {
+typedef NS_ENUM(SInt32, NestedOptionTypeNestedEnum) {
   NestedOptionTypeNestedEnumNestedEnumValue = 1,
-} NestedOptionTypeNestedEnum;
+};
 
 BOOL NestedOptionTypeNestedEnumIsValidValue(NestedOptionTypeNestedEnum value);
 

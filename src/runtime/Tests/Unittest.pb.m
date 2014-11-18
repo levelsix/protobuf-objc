@@ -3039,13 +3039,13 @@ static TestAllTypes* defaultTestAllTypesInstance = nil;
     [output appendFormat:@"%@}\n", indent];
   }
   if (self.hasOptionalNestedEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"optionalNestedEnum", self.optionalNestedEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"optionalNestedEnum", [NSNumber numberWithInteger:self.optionalNestedEnum]];
   }
   if (self.hasOptionalForeignEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"optionalForeignEnum", self.optionalForeignEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"optionalForeignEnum", [NSNumber numberWithInteger:self.optionalForeignEnum]];
   }
   if (self.hasOptionalImportEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"optionalImportEnum", self.optionalImportEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"optionalImportEnum", [NSNumber numberWithInteger:self.optionalImportEnum]];
   }
   if (self.hasOptionalStringPiece) {
     [output appendFormat:@"%@%@: %@\n", indent, @"optionalStringPiece", self.optionalStringPiece];
@@ -3201,13 +3201,13 @@ static TestAllTypes* defaultTestAllTypesInstance = nil;
     [output appendFormat:@"%@%@: %@\n", indent, @"defaultBytes", self.defaultBytes];
   }
   if (self.hasDefaultNestedEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"defaultNestedEnum", self.defaultNestedEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"defaultNestedEnum", [NSNumber numberWithInteger:self.defaultNestedEnum]];
   }
   if (self.hasDefaultForeignEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"defaultForeignEnum", self.defaultForeignEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"defaultForeignEnum", [NSNumber numberWithInteger:self.defaultForeignEnum]];
   }
   if (self.hasDefaultImportEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"defaultImportEnum", self.defaultImportEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"defaultImportEnum", [NSNumber numberWithInteger:self.defaultImportEnum]];
   }
   if (self.hasDefaultStringPiece) {
     [output appendFormat:@"%@%@: %@\n", indent, @"defaultStringPiece", self.defaultStringPiece];
@@ -13640,7 +13640,7 @@ static TestCamelCaseFieldNames* defaultTestCamelCaseFieldNamesInstance = nil;
     [output appendFormat:@"%@%@: %@\n", indent, @"stringField", self.stringField];
   }
   if (self.hasEnumField) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"enumField", self.enumField];
+    [output appendFormat:@"%@%@: %@\n", indent, @"enumField", [NSNumber numberWithInteger:self.enumField]];
   }
   if (self.hasMessageField) {
     [output appendFormat:@"%@%@ {\n", indent, @"messageField"];
@@ -15981,7 +15981,7 @@ static SparseEnumMessage* defaultSparseEnumMessageInstance = nil;
 }
 - (void) writeDescriptionTo:(NSMutableString*) output withIndent:(NSString*) indent {
   if (self.hasSparseEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"sparseEnum", self.sparseEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"sparseEnum", [NSNumber numberWithInteger:self.sparseEnum]];
   }
   [self.unknownFields writeDescriptionTo:output withIndent:indent];
 }
@@ -19530,7 +19530,7 @@ static TestOneof2* defaultTestOneof2Instance = nil;
     [output appendFormat:@"%@%@: %@\n", indent, @"fooBytes", self.fooBytes];
   }
   if (self.hasFooEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"fooEnum", self.fooEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"fooEnum", [NSNumber numberWithInteger:self.fooEnum]];
   }
   if (self.hasFooMessage) {
     [output appendFormat:@"%@%@ {\n", indent, @"fooMessage"];
@@ -19566,7 +19566,7 @@ static TestOneof2* defaultTestOneof2Instance = nil;
     [output appendFormat:@"%@%@: %@\n", indent, @"barBytes", self.barBytes];
   }
   if (self.hasBarEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"barEnum", self.barEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"barEnum", [NSNumber numberWithInteger:self.barEnum]];
   }
   if (self.hasBazInt) {
     [output appendFormat:@"%@%@: %@\n", indent, @"bazInt", [NSNumber numberWithInteger:self.bazInt]];
@@ -24187,10 +24187,10 @@ static TestDynamicExtensions* defaultTestDynamicExtensionsInstance = nil;
     [output appendFormat:@"%@%@: %@\n", indent, @"scalarExtension", [NSNumber numberWithInteger:self.scalarExtension]];
   }
   if (self.hasEnumExtension) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"enumExtension", self.enumExtension];
+    [output appendFormat:@"%@%@: %@\n", indent, @"enumExtension", [NSNumber numberWithInteger:self.enumExtension]];
   }
   if (self.hasDynamicEnumExtension) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"dynamicEnumExtension", self.dynamicEnumExtension];
+    [output appendFormat:@"%@%@: %@\n", indent, @"dynamicEnumExtension", [NSNumber numberWithInteger:self.dynamicEnumExtension]];
   }
   if (self.hasMessageExtension) {
     [output appendFormat:@"%@%@ {\n", indent, @"messageExtension"];

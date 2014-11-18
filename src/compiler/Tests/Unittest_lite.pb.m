@@ -2758,13 +2758,13 @@ static TestAllTypesLite* defaultTestAllTypesLiteInstance = nil;
     [output appendFormat:@"%@}\n", indent];
   }
   if (self.hasOptionalNestedEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"optionalNestedEnum", self.optionalNestedEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"optionalNestedEnum", [NSNumber numberWithInteger:self.optionalNestedEnum]];
   }
   if (self.hasOptionalForeignEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"optionalForeignEnum", self.optionalForeignEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"optionalForeignEnum", [NSNumber numberWithInteger:self.optionalForeignEnum]];
   }
   if (self.hasOptionalImportEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"optionalImportEnum", self.optionalImportEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"optionalImportEnum", [NSNumber numberWithInteger:self.optionalImportEnum]];
   }
   if (self.hasOptionalStringPiece) {
     [output appendFormat:@"%@%@: %@\n", indent, @"optionalStringPiece", self.optionalStringPiece];
@@ -2920,13 +2920,13 @@ static TestAllTypesLite* defaultTestAllTypesLiteInstance = nil;
     [output appendFormat:@"%@%@: %@\n", indent, @"defaultBytes", self.defaultBytes];
   }
   if (self.hasDefaultNestedEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"defaultNestedEnum", self.defaultNestedEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"defaultNestedEnum", [NSNumber numberWithInteger:self.defaultNestedEnum]];
   }
   if (self.hasDefaultForeignEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"defaultForeignEnum", self.defaultForeignEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"defaultForeignEnum", [NSNumber numberWithInteger:self.defaultForeignEnum]];
   }
   if (self.hasDefaultImportEnum) {
-    [output appendFormat:@"%@%@: %d\n", indent, @"defaultImportEnum", self.defaultImportEnum];
+    [output appendFormat:@"%@%@: %@\n", indent, @"defaultImportEnum", [NSNumber numberWithInteger:self.defaultImportEnum]];
   }
   if (self.hasDefaultStringPiece) {
     [output appendFormat:@"%@%@: %@\n", indent, @"defaultStringPiece", self.defaultStringPiece];
