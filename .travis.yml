@@ -1,8 +1,9 @@
 language: objective-c
+osx_image: xcode61
 before_install:
 - brew update
 - brew unlink xctool
-- brew install xctool
+- brew install xctool --HEAD
 - brew install automake
 - brew install libtool
 - brew install protobuf
