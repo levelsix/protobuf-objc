@@ -762,7 +762,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
   void RepeatedPrimitiveFieldGenerator::GenerateHashCodeSource(io::Printer* printer) const {
     if (ReturnsPrimitiveType(descriptor_)) {
       printer->Print(variables_,
-      "[self.$list_name$ enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {\n"
+      "[self.$list_name$ enumerateObjectsUsingBlock:^(NSNumber *obj, NSUInteger idx, BOOL *stop) {\n"
       "  hashCode = hashCode * 31 + [obj longValue];\n"
       "}];\n");
 
