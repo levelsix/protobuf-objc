@@ -118,7 +118,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
       "- (BOOL) has$capitalized_name$;\n"
       "- ($type$) $name$;\n"\
       "- ($classname$_Builder*) set$capitalized_name$:($type$) value;\n"
-      "- ($classname$_Builder*) clear$capitalized_name$;\n");
+      "- ($classname$_Builder*) clear$capitalized_name$List;\n");
   }
 
 
@@ -135,7 +135,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
       "  result.$name$ = value;\n"
       "  return self;\n"
       "}\n"
-      "- ($classname$_Builder*) clear$capitalized_name$ {\n"
+      "- ($classname$_Builder*) clear$capitalized_name$List {\n"
       "  result.has$capitalized_name$ = NO;\n"
       "  result.$name$ = $default$;\n"
       "  return self;\n"
@@ -348,7 +348,7 @@ namespace google { namespace protobuf { namespace compiler { namespace objective
       "  result.$mutable_list_name$ = [PBAppendableArray arrayWithValues:values count:count valueType:PBArrayValueTypeInt32];\n"
       "  return self;\n"
       "}\n"
-      "- ($classname$_Builder *)clear$capitalized_name$ {\n"
+      "- ($classname$_Builder *)clear$capitalized_name$List {\n"
       "  result.$mutable_list_name$ = nil;\n"
       "  return self;\n"
       "}\n");
